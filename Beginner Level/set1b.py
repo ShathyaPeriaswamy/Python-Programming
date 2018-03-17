@@ -1,7 +1,7 @@
 a=raw_input()
 if(int(a)==0):
-	print("zero")
+	print("Zero")
 elif(int(a)%2==0):
-	print("even")
+	print("Even")
 else:
-	print("odd")
+	print("Odd")
