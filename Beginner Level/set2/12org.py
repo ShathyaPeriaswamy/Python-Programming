@@ -1,5 +1,5 @@
-n=raw_input()
-a=int(n)
+i=raw_input()
+a=int(i)
 z=a
 r=0
 while(a!=0):
