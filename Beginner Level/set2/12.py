@@ -1,5 +1,4 @@
 i=raw_input()
-d=len(i)
 if i.isdigit():
 	a=int(i)
 	z=a
