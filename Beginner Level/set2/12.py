@@ -1,15 +1,16 @@
 i=raw_input()
+z=int(i)
 if i.isdigit():
 	a=int(i)
-	z=a
 	r=0
 	l=0
 	while(a!=0):
 		b=a%10
-		r=(r*0)+b
-		r=r**d
-		l+=r
+		r=(r*10)+b
 		a=a/10
-	print l
+	if(z==r):
+		print "yes"
+	else:
+		print "no"
 else:
 	print "invalid input"
