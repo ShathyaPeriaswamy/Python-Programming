@@ -13,6 +13,6 @@ if i.isdigit():
 			l+=r
 			e=e/10
 		if(x==l):
-			print l
+			print l,
 else:
 	print "invalid input"
