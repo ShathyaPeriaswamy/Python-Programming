@@ -1,14 +1,16 @@
 n,m=raw_input().split()
-a,b=raw_input.split()
-if n.isdigit():
-	if(n>=a and m>=b):
-		s=n-a
-		t=m-b
-		print ('{0} {1}'.format(s,t))
-	else:
-		s=a-n
-		t=b-m
-		print ('{0} {1}'.format(s,t))
-		
+a,b=raw_input().split()
+n=int(n)
+m=int(m)
+a=int(a)
+b=int(b)
+if(n>a):
+	print n-a
 else:
-	print "no"
+	print a-n
+if(m>b):
+	print m-b
+else:
+	print b-m
+
+		
