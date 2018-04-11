@@ -5,12 +5,10 @@ m=int(m)
 a=int(a)
 b=int(b)
 if(n>a):
-	print n-a
+	print n-a,
 else:
-	print a-n
+	print a-n,
 if(m>b):
-	print m-b
+	print m-b,
 else:
 	print b-m
-
-		
