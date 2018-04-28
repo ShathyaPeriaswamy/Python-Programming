@@ -1,8 +1,7 @@
 import random
-import string
 c=[]
-m=[]
 q=[]
+h=[]
 a=['red','orange','violet','green','blue','black','white','yellow','purple','brown','grey']
 r=random.choice(a)
 y=a.index(r)
@@ -22,17 +21,27 @@ def clue():
 for j in r:
   q.append(j)
 for i in r:
-  c.append('_')
-d=" ".join(c)
+  c.append('_ ')
+d="".join(c)
 print d
-m=c
-for j in (0,len(c)):
+for j in range(3):
   print 'Enter the value'
   p=raw_input()
   if(p in q):
-    l=p.index(r)
-    c.insert(l+1,p)
+    l=q.index(p)
+    c.insert(l,p)
     c.remove('_')
-    print c
+    k=" ".join(c)
+    print k
+  elif(p==r):
+    print 'Congrats you won'
+    break
   else:
-    print 'wrong'
+    print 'Wrong' 
+    print 'Need a clue?yes or no?'
+    t=raw_input()
+    if(t=='yes'):
+      clue()
+    else:
+      print 'Try!!'
+      
